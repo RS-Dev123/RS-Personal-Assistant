@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #020617;
+  color: #e5e7eb;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #020617;
+  border-right: 1px solid #1e293b;
+  padding: 12px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#chatList div {
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+#chatList div.active,
+#chatList div:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.welcome h1 {
+  font-size: 32px;
+}
+
+.welcome p {
+  color: #9ca3af;
+}
+
+/* MESSAGES */
+.message {
+  max-width: 80%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  line-height: 1.6;
+}
+
+.user {
+  margin-left: auto;
+  background: linear-gradient(135deg,#6366f1,#4f46e5);
+  color: white;
+}
+
+.bot {
+  margin-right: auto;
+  background: rgba(255,255,255,0.06);
+}
+
+.message img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+/* INPUT */
+.input-bar {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #1e293b;
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  border-radius: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: none;
+}
+
+button {
+  margin-left: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RS AI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>RS AI</h2>
+    <button onclick="newChat()">＋ New Chat</button>
+    <div id="chatList"></div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div id="chatArea" class="chat-area">
+      <div class="welcome">
+        <h1>Ask anything</h1>
+        <p>Your personal AI assistant is ready.</p>
+      </div>
+    </div>
+
+    <footer class="input-bar">
+      <textarea id="userInput" placeholder="Message RS AI..."></textarea>
+      <button onclick="sendMessage()">➤</button>
+      <button onclick="generateImage()">🖼</button>
+    </footer>
+  </main>
+
+</div>
+
+<script src="chatbot.js"></script>
+</body>
+</html>
