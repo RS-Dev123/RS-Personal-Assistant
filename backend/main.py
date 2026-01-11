@@ -14,10 +14,12 @@ app = FastAPI(title="RS AI Backend")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # later replace with Netlify URL
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # ---------- SCHEMAS ----------
 class ChatRequest(BaseModel):
